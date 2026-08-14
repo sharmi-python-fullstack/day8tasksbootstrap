@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Student Course Website 🎓</title>
+    <style>
+  body {
+    background-color: #fdf6ec;
+  }
+  .navbar-brand span {
+    color: #ff6b35;
+    font-weight: bold;
+  }
+  .hero {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-weight: 700;
+  }
+  .card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  .card-header {
+    border-radius: 14px 14px 0 0 ;
+    font-weight: bold;
+    color: white;
+  }
+  .bg-c1 { 
+    background-color: #ff6b35; 
+}
+  .bg-c2 { 
+    background-color: #2ec4b6; 
+}
+  .bg-c3 { 
+    background-color: #e71d36;
+ }
+  .bg-c4 { 
+    background-color: #ff9f1c;
+ }
+  .bg-c5 { 
+    background-color: #6a4c93; 
+}
+  .bg-c6 { 
+    background-color: #1982c4; 
+}
+  footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+  <div class="container"> 
+    <a class="navbar-brand" href="#">Sha <span>Curriculum Spot</span></a>
+     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu"> 
+      <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarMenu"> 
+      <ul class="navbar-nav ms-auto"> 
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#">Courses</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#">Trainers</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> 
+      </ul> 
+    </div> 
+  </div> 
+</nav> 
+<section class="hero">
+  <h1>Choose Us · Be Ahead 🚀</h1>
+  <p class="lead">Explore our CBSE Class 11 & 12 Computer Science courses, taught by expert trainers.</p>
+</section>
+<div class="container my-5" id="courses">
+  <h2 class="text-center mb-5" style="color:#2575fc;">Our Courses</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-header bg-c1">Python Programming</div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">CBSE Class 11 Python</h5>
+          <p class="text-muted">Duration: 3 Months</p>
+          <p class="card-text">Learn Python fundamentals — variables, loops, functions, and file handling as per CBSE syllabus.</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Course</button>
+            <button class="btn btn-success">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-header bg-c2">Advanced Python</div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">CBSE Class 12 Python</h5>
+          <p class="text-muted">Duration: 4 Months</p>
+          <p class="card-text">Master data structures, SQL integration, and exam-style problem solving for board exams.</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Course</button>
+            <button class="btn btn-success">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-header bg-c3">Web Development</div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">HTML, CSS & Bootstrap</h5>
+          <p class="text-muted">Duration: 2 Months</p>
+          <p class="card-text">Build responsive websites using HTML, CSS, Flexbox, Grid, and Bootstrap components.</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Course</button>
+            <button class="btn btn-warning">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-header bg-c4">Data Analytics</div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Intro to Data Analytics</h5>
+          <p class="text-muted">Duration: 6 Weeks</p>
+          <p class="card-text">Get started with data analysis basics — spreadsheets, charts, and simple data-driven thinking.</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Course</button>
+            <button class="btn btn-success">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-header bg-c5">SQL Essentials</div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Database & SQL</h5>
+          <p class="text-muted">Duration: 1 Month</p>
+          <p class="card-text">Understand database concepts, SQL queries, and Python-MySQL connectivity for board exams.</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Course</button>
+            <button class="btn btn-warning">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100">
+        <div class="card-header bg-c6">Exam Crash Course</div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">CBSE Board Exam Prep</h5>
+          <p class="text-muted">Duration: 3 Weeks</p>
+          <p class="card-text">Intensive revision with past papers, quick tips, and mock tests for top scores.</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Course</button>
+            <button class="btn btn-success">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+<footer>
+  <p class="mb-0">© 2026 Sha Curriculum Spot. Choose Us · Be Ahead.</p>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Responsive Dashboard 📊</title>
+    <style>
+  body {
+     background-color: #f4f6f9; 
+    }
+ 
+  .sidebar {
+    background: #212529;
+    color: white;
+    min-height: 100vh;
+    padding-top: 20px;
+  }
+  .sidebar .brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #343a40;
+    margin-bottom: 15px;
+  }
+  .sidebar .nav-link {
+    color: #ced4da;
+    padding: 12px 20px;
+    border-left: 4px solid transparent;
+  }
+  .sidebar .nav-link:hover,
+  .sidebar .nav-link.active {
+    background: #343a40;
+    color: #fff;
+    border-left: 4px solid #4e54c8;
+  }
+ 
+  .stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    height: 100%;
+  }
+  .stat-card .icon {
+    font-size: 1.8rem;
+  }
+  .stat-card h3 {
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+  .stat-card p {
+    color: #6c757d;
+    margin-bottom: 0;
+  }
+ 
+  .topbar {
+    background: white;
+    padding: 15px 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+  }
+ 
+  
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+  <div class="row">
+    <nav class="col-lg-2 col-md-3 col-12 sidebar p-0">
+      <div class="brand">🎓 Sha Curriculum Spot</div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">📊 Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">📘 Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">📝 Assignments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">🏆 Results</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="col-lg-10 col-md-9 col-12 py-4 px-4">
+ 
+      <div class="topbar rounded d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">Welcome back, Student 👋</h4>
+        <span class="text-muted">Class 12 · Computer Science</span>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="stat-card">
+            <div class="icon">📘</div>
+            <h3>6</h3>
+            <p>Total Courses</p>
+          </div>
+        </div>
+ 
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="stat-card">
+            <div class="icon">✅</div>
+            <h3>4</h3>
+            <p>Completed Courses</p>
+          </div>
+        </div>
+ 
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="stat-card">
+            <div class="icon">⏳</div>
+            <h3>3</h3>
+            <p>Pending Assignments</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="stat-card">
+            <div class="icon">🏆</div>
+            <h3>92%</h3>
+            <p>Latest Exam Result</p>
+          </div>
+        </div>
+ </div>
+      
+        </div>
+      </div>
+ 
+    </main>
+ 
+  </div>
+</div>
+ 
+</body>
+</html>
+ 
+</body>
+</html>

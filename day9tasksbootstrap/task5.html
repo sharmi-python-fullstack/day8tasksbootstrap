@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<title>Sha Hospitals | Our Doctors</title>
+<style>
+  body {
+    background-color: #f5fbfa;
+  }
+  .navbar-brand span {
+    color: #ffd166;
+    font-weight: bold;
+  }
+  .hero {
+    background: linear-gradient(135deg, #0f9b8e 0%, #2ec4b6 100%);
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-weight: 700;
+  }
+  .card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  .card-img-top {
+    height: 220px;
+    object-fit: cover;
+  }
+  .spec-badge {
+    font-size: 0.85rem;
+  }
+  footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#0f9b8e;">
+  <div class="container">
+    <a class="navbar-brand" href="#">Sha <span>Hospital</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <button class="btn btn-danger btn-sm">🚑 Emergency Contact</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="hero">
+  <h1>Meet Our Doctors 🩺</h1>
+  <p class="lead">Experienced specialists dedicated to your health and wellbeing.</p>
+</section>
+<div class="container my-5" id="doctors">
+  <h2 class="text-center mb-5" style="color:#0f9b8e;">Our Specialists</h2>
+  <div class="row g-4">
+    <div class="col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="dr.anilrao">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title mb-1">Dr. Anil Rao</h5>
+          <span class="badge bg-info text-dark spec-badge mb-2 align-self-start">Cardiologist</span>
+          <p class="card-text text-muted mb-3">12 years of experience</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Profile</button>
+            <button class="btn btn-success">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Dr. Meera Nair">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title mb-1">Dr. Meera Nair</h5>
+          <span class="badge bg-info text-dark spec-badge mb-2 align-self-start">Orthopedic Surgeon</span>
+          <p class="card-text text-muted mb-3">9 years of experience</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Profile</button>
+            <button class="btn btn-success">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Dr. Karthik Menon">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title mb-1">Dr. Karthik Menon</h5>
+          <span class="badge bg-info text-dark spec-badge mb-2 align-self-start">Neurologist</span>
+          <p class="card-text text-muted mb-3">15 years of experience</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Profile</button>
+            <button class="btn btn-warning">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Dr. Priya Sharma">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title mb-1">Dr. Priya Sharma</h5>
+          <span class="badge bg-info text-dark spec-badge mb-2 align-self-start">Pediatrician</span>
+          <p class="card-text text-muted mb-3">8 years of experience</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Profile</button>
+            <button class="btn btn-success">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="card h-100">
+    <img src="data:image/png;base64,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" class="card-img-top" alt="Dr. Vikram Iyer">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title mb-1">Dr. Vikram Iyer</h5>
+          <span class="badge bg-info text-dark spec-badge mb-2 align-self-start">Dentist</span>
+          <p class="card-text text-muted mb-3">10 years of experience</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Profile</button>
+            <button class="btn btn-warning">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <div class="card h-100">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Dr. Sneha Pillai">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title mb-1">Dr. Sneha Pillai</h5>
+          <span class="badge bg-info text-dark spec-badge mb-2 align-self-start">Ophthalmologist</span>
+          <p class="card-text text-muted mb-3">7 years of experience</p>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-primary">View Profile</button>
+            <button class="btn btn-success">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<footer>
+  <p class="mb-0">© 2026 Sha Hospital. Care You Can Trust.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>College Department page 🎓</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Sha College · CS Dept</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+        <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="dept-header text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Department of Computer Science</h1>
+    <p class="lead">Sha College . Choose Us . Be Ahead</p>
+  </div>
+</header>
+<section class="container py-5" id="about">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-6 col-12">
+      <h2 class="section-title">About the Department</h2>
+      <p>
+        The Department of Computer Science at Sha College is committed to building
+        strong foundations in programming, data structures, and modern computing
+        practices. With experienced faculty and industry-aligned curriculum, we
+        prepare students for careers in software development, data analytics, and
+        emerging technologies.
+      </p>
+      <p>
+        Established with a vision to nurture problem-solvers, the department blends
+        theory with hands-on lab work, projects, and mentorship.
+      </p>
+    </div>
+    <div class="col-lg-6 col-12">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZfh_Bi6sjGEOKkdB1xJ87Rdf3GHvPToxVvAFIub_Vw&s=10" class="img-fluid rounded shadow-sm" alt="Department">
+    </div>
+  </div>
+</section>
+ <section class="container py-5" id="faculty">
+  <h2 class="section-title">Our Faculty</h2>
+  <div class="row g-4">
+ <div class="col-lg-3 col-md-6 col-12">
+      <div class="card faculty-card h-100 shadow-sm">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Faculty 1">
+        <div class="card-body text-center">
+          <h6 class="card-title mb-0">Ms.Shreemathi</h6>
+          <small class="text-muted">Head of Department</small>
+        </div>
+      </div>
+    </div>
+ <div class="col-lg-3 col-md-6 col-12">
+      <div class="card faculty-card h-100 shadow-sm">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Faculty 2">
+        <div class="card-body text-center">
+          <h6 class="card-title mb-0">Ms.Bharanishree</h6>
+          <small class="text-muted">Associate Professor</small>
+        </div>
+      </div>
+    </div>
+  <div class="col-lg-3 col-md-6 col-12">
+      <div class="card faculty-card h-100 shadow-sm">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Faculty 3">
+        <div class="card-body text-center">
+          <h6 class="card-title mb-0">Ms.Jannat</h6>
+          <small class="text-muted">Assistant Professor</small>
+        </div>
+      </div>
+    </div>
+  <div class="col-lg-3 col-md-6 col-12">
+      <div class="card faculty-card h-100 shadow-sm">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Faculty 4">
+        <div class="card-body text-center">
+          <h6 class="card-title mb-0">Ms.Alya</h6>
+          <small class="text-muted">Lab Coordinator</small>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ <section class="container py-5" id="facilities">
+  <h2 class="section-title">Facilities</h2>
+  <div class="row g-4">
+ <div class="col-lg-3 col-md-6 col-12">
+      <div class="facility-box">
+        <div class="emoji">💻</div>
+        <h6 class="mt-3">Computer Labs</h6>
+        <p class="small text-muted mb-0">Fully equipped labs with modern systems</p>
+      </div>
+    </div>
+  <div class="col-lg-3 col-md-6 col-12">
+      <div class="facility-box">
+        <div class="emoji">📚</div>
+        <h6 class="mt-3">Library</h6>
+        <p class="small text-muted mb-0">Extensive collection of CS resources</p>
+      </div>
+    </div>
+ <div class="col-lg-3 col-md-6 col-12">
+      <div class="facility-box">
+        <div class="emoji">📶</div>
+        <h6 class="mt-3">Campus Wi-Fi</h6>
+        <p class="small text-muted mb-0">High-speed connectivity across campus</p>
+      </div>
+    </div>
+ <div class="col-lg-3 col-md-6 col-12">
+      <div class="facility-box">
+        <div class="emoji">🏆</div>
+        <h6 class="mt-3">Seminar Hall</h6>
+        <p class="small text-muted mb-0">Venue for workshops and guest lectures</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ <section class="container py-5" id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="row g-4">
+    <div class="col-lg-6 col-12">
+      <div class="p-4 bg-white rounded shadow-sm h-100">
+        <p><strong>📍 Address:</strong> Sha College Campus, Chennai, Tamil Nadu</p>
+        <p><strong>📞 Phone:</strong> +91 9834654710</p>
+        <p><strong>✉️ Email:</strong> csdept@shacollege.edu</p>
+        <p class="mb-0"><strong>🕒 Office Hours:</strong> Mon - Sat, 9:00 AM - 4:00 PM</p>
+      </div>
+    </div>
+    <div class="col-lg-6 col-12">
+      <div class="p-4 bg-white rounded shadow-sm h-100">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Footer -->
+<footer class="text-center">
+  <p class="mb-0">© 2026 Sha College — Department of Computer Science</p>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+</body>
+</html>
